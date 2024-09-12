@@ -7,13 +7,11 @@ using namespace std;
 
 
 int main(){
-    Pessoa p;
-    p.setNome("Robert");
-    p.setSobrenome("Robertson");
-    p.setCPF(123456789);
+    Pessoa p("Robert","Robertson",123456789,2,10,2003);
 
     cout<<"Dados da pessoa"<<endl;
     cout<<"Nome: "<<p.getNome()<<" "<<p.getSobrenome()<<endl;
     cout<<"CPF: "<<p.getCPF()<<endl;
+    cout<<"Nascimento: "<<p.getNascimento()<<endl;
 
 }
