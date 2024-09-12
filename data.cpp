@@ -2,10 +2,13 @@
 using namespace std;
 
 class Data{
+
     private:
+    
         int dia,mes,ano;
 
     public:
+
         Data(int dia, int mes, int ano):
         dia{dia},mes{mes},ano{ano}{}
 
