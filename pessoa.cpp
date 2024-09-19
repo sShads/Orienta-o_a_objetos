@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "data.cpp"
 #include "endereco.cpp"
@@ -51,5 +52,11 @@ class Pessoa{
             return this->endereco.getEndereco();
         }
 
-        
+        virtual void print(){
+            cout<<"Dados da pessoa"<<endl;
+            cout<<"Nome: "<<this->getNome()<<" "<<this->getSobrenome()<<endl;
+            cout<<"CPF: "<<this->getCPF()<<endl;
+            cout<<"Nascimento: "<<this->getNascimento()<<endl;
+            cout<<"Endereco: "<<this->getEndereco()<<endl;
+        }
 };
